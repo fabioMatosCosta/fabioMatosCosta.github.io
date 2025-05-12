@@ -65,13 +65,14 @@ export default function HorizontalProjects() {
   );
 
   return (
-    <section
-      id="projects"
-      ref={ref}
-      style={{ height: sectionHeight, position: "relative" }}
-      className="w-full bg-white flex flex-col"
-    >
-      <h2 className="text-4xl font-bold mb-16 text-center text-gray-800 w-full pt-16">Projects</h2>
+    <>
+      <h2 className="text-6xl font-bold mb-16 text-center text-gray-800 w-full pt-16">Projects</h2>
+      <section
+        id="projects"
+        ref={ref}
+        style={{ height: sectionHeight, position: "relative" }}
+        className="w-full bg-white flex"
+      >
       {/* Sticky Image Container (Left) */}
       <div className="sticky top-0 left-0 h-screen w-[65vw] flex items-center justify-center z-20 overflow-hidden">
         {Array.from({ length: projects.length }).map((_, idx) => {
@@ -149,7 +150,7 @@ export default function HorizontalProjects() {
 
         </motion.div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }
-
