@@ -95,7 +95,7 @@ const Projects = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
-              <h3 className="text-2xl font-semibold mb-1">{project.title}</h3>
+              <h3 className="p-8 text-8xl font-bold text-gray-900 mb-1">{project.title}</h3>
               <div className="text-sm text-gray-500 mb-2">{project.date}</div>
               <p className="text-gray-700 mb-4">{project.desc}</p>
               <div className="flex gap-4 flex-wrap">
@@ -124,7 +124,7 @@ const Projects = () => {
 
   return (
     <section id="projects" ref={containerRef} className="relative min-h-screen flex flex-col justify-center items-center bg-white px-4 py-24">
-      <h2 className="text-4xl font-bold mb-8 text-gray-900">Projects</h2>
+      <h2 className="text-8xl font-bold mb-8 text-gray-900">Projects</h2>
       <div className="relative w-full max-w-5xl min-h-[80vh]" style={{ height: `calc(${PROJECTS.length} * 100vh)` }}>
         {/* Sticky Image Container */}
         <div className="sticky top-24 left-0 h-[70vh] w-3/5 float-left">
@@ -160,7 +160,7 @@ const Projects = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
-              <h3 className="text-2xl font-semibold mb-1">{project.title}</h3>
+              <h3 className="p-8 text-8xl font-bold text-gray-900 mb-1">{project.title}</h3>
               <div className="text-sm text-gray-500 mb-2">{project.date}</div>
               <p className="text-gray-700 mb-4">{project.desc}</p>
               <div className="flex gap-4 flex-wrap">

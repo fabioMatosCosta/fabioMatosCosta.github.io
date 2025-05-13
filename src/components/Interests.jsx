@@ -53,7 +53,7 @@ const Interests = () => (
     <div className="flex flex-col items-center w-full mt-8 px-20">
       <div className="flex flex-row items-center w-full">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/boardgames.jpg" alt="Board games" className="w-full h-full object-cover rounded-lg" />
+          <img src="/src/assets/computerGames.jpg" alt="Board games" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">I enjoy games and computer building.</h3>
