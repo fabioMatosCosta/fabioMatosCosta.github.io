@@ -28,7 +28,7 @@ const Interests = () => (
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">In October 2023, I went to Slovenia </h3>
-          <p className="p-8 text-gray-700 text-5xl">To rework electric hydrofoiling bikes for <a href="https://manta5.com/" className="text-blue-500 hover:text-blue-700 transition duration-300 transform hover:scale-105">Manta5</a>. That was cool!</p>
+          <p className="p-8 text-gray-700 text-5xl">To rework electric hydrofoiling bikes for <a href="https://manta5.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 transition duration-300 transform hover:scale-105">Manta5</a>. That was cool!</p>
         </div>
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">

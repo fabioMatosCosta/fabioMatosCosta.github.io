@@ -9,8 +9,8 @@ const PROJECTS = [
     desc: "Full stack app to keep track of job applications, contacts, and replies. NodeJS/ExpressJS backend with MongoDB, React & MaterialUI frontend.",
     image: "https://placehold.co/600x800?text=Jobbing+Memory",
     links: [
-      { href: "https://github.com/fabioMatosCosta/JobTrackerApp", label: "API GitHub" },
-      { href: "https://github.com/fabioMatosCosta/JobTrackerAppFrontEnd", label: "Client GitHub" }
+      { href: "https://github.com/fabioMatosCosta/JobTrackerApp", label: "API GitHub", target: "_blank", rel: "noopener noreferrer" },
+      { href: "https://github.com/fabioMatosCosta/JobTrackerAppFrontEnd", label: "Client GitHub", target: "_blank", rel: "noopener noreferrer" }
     ]
   },
   {
@@ -19,8 +19,8 @@ const PROJECTS = [
     desc: "Full stack app created in pair programming. REST API with NodeJS/ExpressJS, MongoDB, dual authentication (users & artists), image uploads to Cloudinary, deployed on Heroku/Netlify. ReactJS frontend.",
     image: "https://placehold.co/600x800?text=Tattoo+Underground",
     links: [
-      { href: "https://github.com/fabioMatosCosta/Project3-tattoo-api", label: "API GitHub" },
-      { href: "https://github.com/fabioMatosCosta/Project3-tattoo-client", label: "Client GitHub" }
+      { href: "https://github.com/fabioMatosCosta/Project3-tattoo-api", label: "API GitHub", target: "_blank", rel: "noopener noreferrer" },
+      { href: "https://github.com/fabioMatosCosta/Project3-tattoo-client", label: "Client GitHub", target: "_blank", rel: "noopener noreferrer" }
     ]
   },
   {
@@ -29,7 +29,7 @@ const PROJECTS = [
     desc: "Full stack app with REST API (NodeJS/ExpressJS, MongoDB, authentication). Users can create bands and add other users. Deployed on Heroku.",
     image: "https://placehold.co/600x800?text=LulaBazooka",
     links: [
-      { href: "https://github.com/fabioMatosCosta/LulaBazooka", label: "GitHub" }
+      { href: "https://github.com/fabioMatosCosta/LulaBazooka", label: "GitHub", target: "_blank", rel: "noopener noreferrer" }
     ]
   },
   {
@@ -38,8 +38,8 @@ const PROJECTS = [
     desc: "Pupper Hop is a 2D endless runner game using DOM manipulation for rendering and movement. Built during bootcamp.",
     image: "https://placehold.co/600x800?text=PupperHop",
     links: [
-      { href: "https://pupperhop.netlify.com/", label: "Demo" },
-      { href: "https://github.com/fabioMatosCosta/Project_1_Ironhack_EndlessRunner", label: "GitHub" }
+      { href: "https://pupperhop.netlify.com/", label: "Demo", target: "_blank", rel: "noopener noreferrer" },
+      { href: "https://github.com/fabioMatosCosta/Project_1_Ironhack_EndlessRunner", label: "GitHub", target: "_blank", rel: "noopener noreferrer" }
     ]
   }
 ];
