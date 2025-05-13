@@ -29,14 +29,14 @@ const experiences = [
   },
   {
     company: "VANMOOF",
-    role: "Team Lead in Hubs and Service",
+    role: "Team Lead ",
     period: "April 2023 – August 2023, Amsterdam",
     description: "E-bike service manager in Amsterdam. Managed a large team of mechanics, strategised, innovated, and improved processes to boost efficiency based on data and customer feedback. Ensured seamless coordination and customer satisfaction.",
     image: VanmoofLogo
   },
   {
     company: "VANMOOF",
-    role: "Assistant Team Lead in Hubs and Service",
+    role: "Assistant Team Lead",
     period: "April 2022 – April 2023, Amsterdam",
     description: "Serviced e-bikes, supported repair operations, and provided training for new employees with an emphasis on safety and proper technique.",
     image: VanmoofLogo
@@ -57,7 +57,7 @@ const experiences = [
   },
   {
     company: "IRONHACK",
-    role: "Web Development Bootcamp (Education)",
+    role: "Web Development Bootcamp",
     period: "February 2020 – April 2020, Amsterdam",
     description: "9-week intensive bootcamp in Fullstack web development. Worked on projects with the MERN stack (JavaScript, HTML, CSS, ReactJS, NodeJS, Express, and MongoDB).",
     image: IronhackLogo
@@ -67,7 +67,7 @@ const experiences = [
 export default function Experience() {
   return (
     <section className="min-h-screen py-16 px-4 mb-16" id="experience">
-      <h2 className="text-3xl font-bold mb-16 text-center text-gray-800">Experience</h2>
+      <h2 className="font-bold mb-16 text-center p-8 text-8xl text-gray-900">Experience</h2>
       <div className="relative flex flex-col items-center h-full">
         {/* Vertical timeline line */}
         <div className="absolute left-1/2 top-0 w-1 bg-blue-200 h-full -translate-x-1/2 z-0 rounded" />
@@ -80,13 +80,13 @@ export default function Experience() {
       {isLeft ? (
         <>
           <div className="w-2/5 flex justify-end">
-            <div className="p-6 max-w-md text-right" style={{ backgroundColor: '#f5faff' }}>
+            <div className="p-6 max-w-md text-right" >
               <div className="flex flex-col items-end mb-2">
-                <span className="font-semibold text-lg text-blue-700">{exp.role}</span>
-                <span className="text-sm text-gray-500">{exp.period}</span>
+                <span className="p-8 text-8xl font-bold text-gray-900">{exp.role}</span>
+                <span className="text-2xl text-gray-500">{exp.period}</span>
               </div>
-              <div className="font-medium text-gray-900">{exp.company}</div>
-              <div className="mt-2 text-gray-700 text-sm">{exp.description}</div>
+              <div className="p-8 text-gray-700 text-5xl">{exp.company}</div>
+              <div className="mt-2 text-gray-700 text-4xl">{exp.description}</div>
             </div>
           </div>
           <div className="w-1/5 flex justify-center">
@@ -105,13 +105,13 @@ export default function Experience() {
             </div>
           </div>
           <div className="w-2/5 flex justify-start">
-            <div className="p-6 max-w-md text-left" style={{ backgroundColor: '#f5faff' }}>
+            <div className="p-6 max-w-md text-left">
               <div className="flex flex-col items-start mb-2">
-                <span className="font-semibold text-lg text-blue-700">{exp.role}</span>
-                <span className="text-sm text-gray-500">{exp.period}</span>
+                <span className="p-8 text-8xl font-bold text-gray-900">{exp.role}</span>
+                <span className="text-2xl text-gray-500">{exp.period}</span>
               </div>
-              <div className="font-medium text-gray-900">{exp.company}</div>
-              <div className="mt-2 text-gray-700 text-sm">{exp.description}</div>
+              <div className="p-8 text-gray-700 text-5xl">{exp.company}</div>
+              <div className="mt-2 text-gray-700 text-4xl">{exp.description}</div>
             </div>
           </div>
         </>
