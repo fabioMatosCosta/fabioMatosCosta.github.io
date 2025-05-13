@@ -47,7 +47,7 @@ function App() {
           <AnimatedSection><Intro /></AnimatedSection>
         </div>
         <HorizontalProjects />
-        <AnimatedSection><Experience /></AnimatedSection>
+        <Experience />
         <AnimatedSection><Interests /></AnimatedSection>
         <AnimatedSection><Links /></AnimatedSection>
       </main>
