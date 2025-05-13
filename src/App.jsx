@@ -8,6 +8,7 @@ import Interests from "./components/Interests.jsx";
 import Links from "./components/Links.jsx";
 import AnimatedSection from "./components/AnimatedSection.jsx";
 import "./index.css";
+import "./styles.css";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);

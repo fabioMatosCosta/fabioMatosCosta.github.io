@@ -1,7 +1,7 @@
 import React from "react";
 
 const Interests = () => (
-  <section id="interests" className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center" style={{ backgroundImage: 'url(/path/to/your/background-image.jpg)' }}>
+  <section id="interests" className="min-h-screen flex flex-col items-center bg-pattern">
     <h2 className="p-8 text-8xl font-bold text-gray-900">I have done a few cool things</h2>
     <div className="flex flex-col items-center w-full px-4">  {/* Added padding on the left and right */}
       <div className="flex flex-row items-center w-full mt-8 px-20">
