@@ -66,12 +66,12 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="py-16 px-4 max-w-5xl mx-auto" id="experience">
+    <section className="min-h-screen py-16 px-4 mb-16" id="experience">
       <h2 className="text-3xl font-bold mb-16 text-center text-gray-800">Experience</h2>
-      <div className="relative flex flex-col items-center">
+      <div className="relative flex flex-col items-center h-full">
         {/* Vertical timeline line */}
         <div className="absolute left-1/2 top-0 w-1 bg-blue-200 h-full -translate-x-1/2 z-0 rounded" />
-        <div className="w-full flex flex-col gap-16 z-10">
+        <div className="w-full flex flex-col gap-16 z-10 h-full">
           {experiences.map((exp, idx) => {
   const isLeft = idx % 2 === 0;
   return (
