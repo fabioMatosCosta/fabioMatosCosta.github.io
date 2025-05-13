@@ -11,7 +11,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 10px, rgba(173, 216, 230, 1) 10px, rgba(173, 216, 230, 1) 20px);
+  background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 10px, rgb(210, 232, 240) 10px, rgba(210, 232, 240, 1) 20px);
   opacity: 0.5;
   z-index: -1;
 }
