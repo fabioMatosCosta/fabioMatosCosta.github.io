@@ -7,7 +7,6 @@ import Experience from "./components/Experience.jsx";
 import Interests from "./components/Interests.jsx";
 import Links from "./components/Links.jsx";
 import AnimatedSection from "./components/AnimatedSection.jsx";
-import AnimatedContact from "./components/AnimatedContact.jsx";
 import "./index.css";
 
 function App() {
@@ -50,7 +49,6 @@ function App() {
         <AnimatedSection><Experience /></AnimatedSection>
         <AnimatedSection><Interests /></AnimatedSection>
         <AnimatedSection><Links /></AnimatedSection>
-        <AnimatedContact />
       </main>
     </div>
   );
