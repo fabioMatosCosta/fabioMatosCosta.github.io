@@ -8,9 +8,6 @@ const Links = () => (
         alt="Profile picture" 
         className="my-10 w-1/2 rounded-full transition duration-300 ease-in-out transform hover:blur-sm" 
       />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
-        <span className="block w-16 h-16 border-l-8 border-r-8 border-t-8 border-transparent border-b-gray-900"></span> 
-      </div>
     </div>
     <h2 className="text-4xl font-bold mb-8 text-gray-900">Find me online here: </h2>
     <div className="flex flex-row gap-4 text-lg">
