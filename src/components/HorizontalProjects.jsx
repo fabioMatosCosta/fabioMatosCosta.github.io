@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import pupperhopImg from "../assets/pupperhop.png";
-import joggingBrainImg from "../assets/jogging_brain_2.jpg";
 
 const projects = [
   {
@@ -14,7 +12,7 @@ const projects = [
       { label: "API GitHub", url: "https://github.com/fabioMatosCosta/JobTrackerApp" },
       { label: "Client GitHub", url: "https://github.com/fabioMatosCosta/JobTrackerAppFrontEnd" },
     ],
-    image: joggingBrainImg,
+    image: "src/assets/jobMemory.png",
   },
   {
     title: "Tattoo Underground",
@@ -25,7 +23,7 @@ const projects = [
       { label: "API GitHub", url: "https://github.com/fabioMatosCosta/Project3-tattoo-api" },
       { label: "Client GitHub", url: "https://github.com/fabioMatosCosta/Project3-tattoo-client" },
     ],
-    image: joggingBrainImg,
+    image:"src/assets/jogging_brain_2.jpg",
   },
   {
     title: "LulaBazooka",
@@ -35,7 +33,7 @@ const projects = [
     links: [
       { label: "GitHub", url: "https://github.com/fabioMatosCosta/LulaBazooka" },
     ],
-    image: joggingBrainImg,
+    image:"src/assets/jogging_brain_2.jpg",
   },
   {
     title: "PupperHop",
@@ -46,7 +44,7 @@ const projects = [
       { label: "Demo", url: "https://pupperhop.netlify.com/" },
       { label: "GitHub", url: "https://github.com/fabioMatosCosta/Project_1_Ironhack_EndlessRunner" },
     ],
-    image: pupperhopImg,
+    image: "src/assets/pupperhop.png",
   },
 ];
 
@@ -78,10 +76,17 @@ export default function HorizontalProjects() {
         {Array.from({ length: projects.length }).map((_, idx) => {
           const start = idx / numProjects;
           const end = (idx + 1) / numProjects;
-          // Ensure the first image is fully visible at the top
-          const opacity = idx === 0
-            ? useTransform(scrollYProgress, [0, end], [1, 0])
-            : useTransform(scrollYProgress, [start, end], [0, 1]);
+          const yOffsets = projects.map((_, idx) =>
+            useTransform(scrollYProgress, [idx / projects.length, (idx + 1) / projects.length], [0, -100])
+          );
+          const opacities = projects.map((_, idx) =>
+            useTransform(scrollYProgress, [idx / projects.length, (idx + 1) / projects.length], [1, 0])
+          );
+
+          // Ensure the first image is fully visible at the start
+          const firstOpacity = useTransform(scrollYProgress, [0, 1 / projects.length], [1, 0]);
+          const lastOpacity = useTransform(scrollYProgress, [(projects.length - 1) / projects.length, 1], [0, 1]);
+
           const y = idx === 0
             ? useTransform(scrollYProgress, [0, end], [0, 80])
             : useTransform(scrollYProgress, [start, end], [80, 0]);
@@ -89,7 +94,7 @@ export default function HorizontalProjects() {
             <motion.div
               key={projects[idx].title}
               className="absolute w-[80%] h-[80%] flex items-center justify-center"
-              style={{ opacity, y, zIndex: projects.length - idx }}
+              style={{ opacity: opacities[idx], y: yOffsets[idx], zIndex: projects.length - idx }}
             >
               {projects[idx].image ? (
                 <img
