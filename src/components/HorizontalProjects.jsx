@@ -23,7 +23,7 @@ const projects = [
       { label: "API GitHub", url: "https://github.com/fabioMatosCosta/Project3-tattoo-api" },
       { label: "Client GitHub", url: "https://github.com/fabioMatosCosta/Project3-tattoo-client" },
     ],
-    image:"src/assets/jogging_brain_2.jpg",
+    image: "src/assets/jogging_brain_2.jpg",
   },
   {
     title: "LulaBazooka",
@@ -33,7 +33,7 @@ const projects = [
     links: [
       { label: "GitHub", url: "https://github.com/fabioMatosCosta/LulaBazooka" },
     ],
-    image:"src/assets/jogging_brain_2.jpg",
+    image: "src/assets/jogging_brain_2.jpg",
   },
   {
     title: "PupperHop",
@@ -41,7 +41,7 @@ const projects = [
     description:
       "Pupper Hop is a 2D endless runner game using DOM manipulation for rendering and movement. Built during bootcamp.",
     links: [
-      { label: "Demo", url: "https://pupperhop.netlify.com/" },
+      { label: "Demo", url: "https://pupperhop.netlify.app/" },
       { label: "GitHub", url: "https://github.com/fabioMatosCosta/Project_1_Ironhack_EndlessRunner" },
     ],
     image: "src/assets/pupperhop.png",
@@ -85,16 +85,16 @@ export default function HorizontalProjects() {
 
           // Ensure the first image is fully visible at the start
           const firstOpacity = useTransform(scrollYProgress, [0, 1 / projects.length], [1, 0]);
-          const lastOpacity = useTransform(scrollYProgress, [(projects.length - 1) / projects.length, 1], [0, 1]);
 
           const y = idx === 0
             ? useTransform(scrollYProgress, [0, end], [0, 80])
             : useTransform(scrollYProgress, [start, end], [80, 0]);
+
           return (
             <motion.div
               key={projects[idx].title}
               className="absolute w-[80%] h-[80%] flex items-center justify-center"
-              style={{ opacity: opacities[idx], y: yOffsets[idx], zIndex: projects.length - idx }}
+              style={{ opacity: idx === 0 ? firstOpacity : opacities[idx], y: yOffsets[idx], zIndex: projects.length - idx }}
             >
               {projects[idx].image ? (
                 <img
@@ -127,15 +127,16 @@ export default function HorizontalProjects() {
             return (
               <motion.div
                 key={proj.title}
-                className="w-[35vw] h-full flex flex-col justify-center px-16 py-10 bg-white/80 mx-2"
+                className="w-[35vw] h-full flex flex-col justify-center px-16 py-10 bg-white/80 mx-2 gap-8"
                 initial={{ opacity: 0, x: 80 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
                 {...(opacity ? { style: { opacity } } : {})}
               >
-                <h3 className="text-3xl font-bold mb-2 text-blue-900">{proj.title}</h3>
-                <div className="text-sm text-gray-500 mb-2">{proj.period}</div>
-                <p className="text-gray-700 mb-4">{proj.description}</p>
+              
+                <h3 className="py-8 text-6xl font-bold text-gray-900">{proj.title}</h3>
+                <div className="text-2xl text-gray-500">{proj.period}</div>
+                <p className="mt-2 text-gray-700 text-4xl py-4">{proj.description}</p>
                 <div className="flex gap-4 flex-wrap">
                   {proj.links.map((link) => (
                     <a
@@ -143,7 +144,7 @@ export default function HorizontalProjects() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
+                      className="hover:underline text-black text-2xl"
                     >
                       {link.label}
                     </a>
