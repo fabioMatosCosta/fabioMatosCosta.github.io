@@ -26,7 +26,7 @@ const Links = () => (
       </div>
     </div>
     <a href="mailto:fabiodanielmc@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:underline text-black p-4"> 
-        <h2 className="text-2xl font-bold mb-8 text-gray-900">Or send me an email</h2>
+        <h2 className="text-2xl font-bold mb-8 text-gray-900">Or send me an email to fabiodanielmc@gmail.com</h2>
     </a>
   </section>
 );
