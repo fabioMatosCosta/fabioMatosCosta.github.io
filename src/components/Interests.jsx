@@ -3,7 +3,7 @@ import React from "react";
 const Interests = () => (
   <section id="interests" className="min-h-screen flex flex-col items-center bg-pattern">
     <h2 className="p-8 text-8xl font-bold text-gray-900">I have done a few cool things</h2>
-    <div className="flex flex-col items-center w-full px-4">  {/* Added padding on the left and right */}
+    <div className="flex flex-col items-center w-full px-4">
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
           <img src="/src/assets/climbing.png" alt="Climbing" className="w-full h-full object-cover rounded-lg" />

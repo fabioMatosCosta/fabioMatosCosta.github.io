@@ -62,6 +62,7 @@ export default function HorizontalProjects() {
     ["0vw", `-${100 * (numProjects - 1)}vw`]
   );
 
+
   return (
     <>
       <h2 className="text-6xl font-bold mb-16 text-center text-gray-800 w-full pt-16">Projects</h2>

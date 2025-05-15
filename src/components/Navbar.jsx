@@ -4,7 +4,7 @@ const Navbar = () => (
   <nav className="z-50 bg-white/50 backdrop-blur flex justify-center items-center px-8 py-3 max-w-4xl mx-auto rounded-full">
     <div className="flex items-center px-8">
       <img 
-        src={"src/assets/logo_wbg.PNG"} 
+        src={"src/assets/logo_wbg2.PNG"} 
         alt="Logo" 
         className="w-16 h-auto"
       />
