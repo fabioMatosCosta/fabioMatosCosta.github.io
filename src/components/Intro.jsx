@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo_wbg2.PNG";
+import logo from "../assets/logo_wbg2.png";
 
 const Intro = () => (
   <section id="intro" className="min-h-screen flex flex-col justify-center items-center bg-pattern text-center px-4 pt-24">
