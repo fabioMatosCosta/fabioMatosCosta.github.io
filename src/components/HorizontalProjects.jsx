@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import jobMemory from "../assets/jobMemory.png";
 import pupperHop from "../assets/pupperhop.png";
 import tattoo from "../assets/Tattoo2.png";
+import lulaBazooka from "../assets/Loola2.png";
 
 
 const projects = [
@@ -36,7 +37,7 @@ const projects = [
     links: [
       { label: "GitHub", url: "https://github.com/fabioMatosCosta/LulaBazooka" },
     ],
-    image: pupperHop,
+    image: lulaBazooka,
   },
   {
     title: "PupperHop",
