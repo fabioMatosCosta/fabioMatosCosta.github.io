@@ -15,7 +15,7 @@ const Interests = () => (
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/Manta5.jpg" alt="Endurance sports" className="w-full h-full object-cover rounded-lg" />
+          <img src="/src/assets/Sports.PNG" alt="Endurance sports" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">I've been doing endurance sports.</h3>
@@ -49,7 +49,7 @@ const Interests = () => (
           <p className="p-8 text-5xl text-gray-700"> Yes, I actually built those shelves 😲 🪚 </p>
         </div>
       </div>
-    </div>
+    
     <div className="flex flex-col items-center w-full mt-8 px-20">
       <div className="flex flex-row items-center w-full">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
@@ -59,6 +59,7 @@ const Interests = () => (
           <h3 className="p-8 text-8xl font-bold text-gray-900">I enjoy games and computer building.</h3>
           <p className="p-8 text-5xl text-gray-700"> I am still a nerd at heart ❤️</p>
         </div>
+      </div>
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
