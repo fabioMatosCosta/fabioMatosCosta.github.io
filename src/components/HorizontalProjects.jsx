@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import jobMemory from "../assets/jobMemory.png";
+import joggingBrain from "../assets/jogging_brain_2.jpg";
+import pupperHop from "../assets/pupperhop.png";
 
 
 const projects = [
@@ -12,7 +15,7 @@ const projects = [
       { label: "API GitHub", url: "https://github.com/fabioMatosCosta/JobTrackerApp" },
       { label: "Client GitHub", url: "https://github.com/fabioMatosCosta/JobTrackerAppFrontEnd" },
     ],
-    image: "src/assets/jobMemory.png",
+    image: jobMemory,
   },
   {
     title: "Tattoo Underground",
@@ -23,7 +26,7 @@ const projects = [
       { label: "API GitHub", url: "https://github.com/fabioMatosCosta/Project3-tattoo-api" },
       { label: "Client GitHub", url: "https://github.com/fabioMatosCosta/Project3-tattoo-client" },
     ],
-    image: "src/assets/jogging_brain_2.jpg",
+    image: joggingBrain,
   },
   {
     title: "LulaBazooka",
@@ -33,7 +36,7 @@ const projects = [
     links: [
       { label: "GitHub", url: "https://github.com/fabioMatosCosta/LulaBazooka" },
     ],
-    image: "src/assets/jogging_brain_2.jpg",
+    image: pupperHop,
   },
   {
     title: "PupperHop",
@@ -44,7 +47,7 @@ const projects = [
       { label: "Demo", url: "https://pupperhop.netlify.app/" },
       { label: "GitHub", url: "https://github.com/fabioMatosCosta/Project_1_Ironhack_EndlessRunner" },
     ],
-    image: "src/assets/pupperhop.png",
+    image: pupperHop,
   },
 ];
 

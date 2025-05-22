@@ -1,4 +1,11 @@
 import React from "react";
+import climbing from "../assets/climbing.png";
+import sports from "../assets/Sports.PNG";
+import manta5 from "../assets/Manta5.jpg";
+import hiking from "../assets/hiking.jpg";
+import shelves from "../assets/Shelves.jpg";
+import keyboard from "../assets/Keyboard.jpg";
+
 
 const Interests = () => (
   <section id="interests" className="min-h-screen flex flex-col items-center bg-pattern">
@@ -6,7 +13,7 @@ const Interests = () => (
     <div className="flex flex-col items-center w-full px-4">
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/climbing.png" alt="Climbing" className="w-full h-full object-cover rounded-lg" />
+          <img src={climbing} alt="Climbing" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">Some climbing. 🧗‍♂️</h3>
@@ -15,7 +22,7 @@ const Interests = () => (
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/Sports.PNG" alt="Endurance sports" className="w-full h-full object-cover rounded-lg" />
+          <img src={sports} alt="Endurance sports" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">I've been doing endurance sports.</h3>
@@ -24,7 +31,7 @@ const Interests = () => (
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/Manta5.jpg" alt="Reworking bikes" className="w-full h-full object-cover rounded-lg" />
+          <img src={manta5} alt="Reworking bikes" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">In October 2023, I went to Slovenia </h3>
@@ -33,7 +40,7 @@ const Interests = () => (
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/hiking.jpg" alt="Plants" className="w-full h-full object-cover rounded-lg" />
+          <img src={hiking} alt="Plants" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">I have a passion for nature. </h3>
@@ -42,7 +49,7 @@ const Interests = () => (
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/Shelves.jpg" alt="Plants" className="w-full h-full object-cover rounded-lg" />
+          <img src={shelves} alt="Plants" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">I like building things with my hands. </h3>
@@ -53,7 +60,7 @@ const Interests = () => (
     <div className="flex flex-col items-center w-full mt-8 px-20">
       <div className="flex flex-row items-center w-full">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/computerGames.jpg" alt="Board games" className="w-full h-full object-cover rounded-lg" />
+          <img src={computerGames} alt="Board games" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">I enjoy games and computer building.</h3>
@@ -63,7 +70,7 @@ const Interests = () => (
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">
         <div className="h-[50vh] rounded-lg overflow-hidden w-1/2 px-8">
-          <img src="/src/assets/Keyboard.jpg" alt="Board games" className="w-full h-full object-cover rounded-lg" />
+          <img src={keyboard} alt="Board games" className="w-full h-full object-cover rounded-lg" />
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">And I am trying to learn music production.</h3>

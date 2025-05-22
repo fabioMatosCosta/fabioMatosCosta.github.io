@@ -1,12 +1,15 @@
 import React from "react";
-
+import github from "../assets/github_logo_media_social_icon.png";
+import linkedin from "../assets/linkedin_icon.png";
+import instagram from "../assets/instagram_media_online_social_icon.png";
+import profilePic from "../assets/Profile_pic_turq_bg.JPG";
 
 const Links = () => (
 
 <section id="links" className="min-h-screen flex flex-col justify-center items-center bg-white px-4 py-24">
     <div className="relative flex flex-col items-center">
       <img 
-        src={"src/assets/Profile_pic_turq_bg.JPG"} 
+        src={profilePic} 
         alt="Profile picture" 
         className="my-10 w-1/2 rounded-full transition duration-300 ease-in-out transform hover:blur-sm" 
       />
@@ -15,13 +18,13 @@ const Links = () => (
     <div className="flex flex-row gap-4 text-lg">
       <div className="flex flex-row gap-4 text-lg">
         <a href="https://github.com/fabioMatosCosta" target="_blank" rel="noopener noreferrer" className="hover:underline text-black p-4">
-          <img src={"src/assets/github_logo_media_social_icon.png"} alt="GitHub" className="w-12 h-12" />
+          <img src={github} alt="GitHub" className="w-12 h-12" />
         </a>
         <a href="https://www.linkedin.com/in/fabiomatoscosta/" target="_blank" rel="noopener noreferrer" className="hover:underline text-black p-4">
-          <img src={"src/assets/linkedin_icon.png"} alt="LinkedIn" className="w-12 h-12" />
+          <img src={linkedin} alt="LinkedIn" className="w-12 h-12" />
         </a>
         <a href="https://www.instagram.com/fabiomatoscosta/" target="_blank" rel="noopener noreferrer" className="hover:underline text-black p-4">
-          <img src={"src/assets/instagram_media_online_social_icon.png"} alt="Instagram" className="w-12 h-12" />
+          <img src={instagram} alt="Instagram" className="w-12 h-12" />
         </a>
       </div>
     </div>
