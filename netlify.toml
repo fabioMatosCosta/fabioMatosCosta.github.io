@@ -1,11 +1,10 @@
 [build]
-  command = "npm ci && npm run build"
+  command = "npm run build"
   publish = "dist"
 
 [dev]
   command = "npm run dev"
   port = 5173  # Vite's default port
-  targetPort = 5173
 
 [[redirects]]
   from = "/*"
@@ -13,13 +12,5 @@
   status = 200
 
 [build.environment]
-  NODE_VERSION = "18.0.0"  # Specific version to ensure consistency
+  NODE_VERSION = "18"  # Using Node 18 as it's stable and widely supported
   NPM_FLAGS = "--legacy-peer-deps"  # Helps with dependency resolution
-
-[build]
-  command = "rm -rf node_modules && rm -f package-lock.json && npm install && npm run build"
-  publish = "dist"
-
-[context.production.environment]
-  NODE_VERSION = "18.0.0"
-  NPM_FLAGS = "--legacy-peer-deps"
