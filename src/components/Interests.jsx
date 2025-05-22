@@ -5,7 +5,7 @@ import manta5 from "../assets/Manta5.jpg";
 import hiking from "../assets/hiking.jpg";
 import shelves from "../assets/Shelves.jpg";
 import keyboard from "../assets/Keyboard.jpg";
-import computerGames from "../assets/ComputerGames.jpg";
+import computerGames from "../assets/computerGames.jpg";
 
 
 const Interests = () => (
