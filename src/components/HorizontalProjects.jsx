@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import jobMemory from "../assets/jobMemory.png";
 import pupperHop from "../assets/pupperhop.png";
+import tattoo from "../assets/Tattoo2.png";
 
 
 const projects = [
@@ -25,7 +26,7 @@ const projects = [
       { label: "API GitHub", url: "https://github.com/fabioMatosCosta/Project3-tattoo-api" },
       { label: "Client GitHub", url: "https://github.com/fabioMatosCosta/Project3-tattoo-client" },
     ],
-    image: jobMemory,
+    image: tattoo,
   },
   {
     title: "LulaBazooka",
