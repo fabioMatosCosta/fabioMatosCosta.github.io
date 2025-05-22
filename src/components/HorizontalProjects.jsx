@@ -52,7 +52,7 @@ const projects = [
 
 export default function HorizontalProjects() {
   const ref = useRef(null);
-  const numProjects = projects.length;
+  const numProjects = projects.length -1;
   // Height of the section = viewport height * number of projects
   // This gives enough vertical scroll space to move horizontally through all projects
   const sectionHeight = `${numProjects * 100}vh`;
@@ -61,7 +61,7 @@ export default function HorizontalProjects() {
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    ["0vw", `-${100 * (numProjects - 1)}vw`]
+    ["0vw", `-${100 * (numProjects - 2)}vw`]
   );
 
 
@@ -159,6 +159,7 @@ export default function HorizontalProjects() {
 
         </motion.div>
       </div>
+      <div className="h-[20vh]"></div>
       </section>
     </>
   );
