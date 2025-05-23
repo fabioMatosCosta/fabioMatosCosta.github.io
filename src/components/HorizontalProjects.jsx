@@ -141,7 +141,7 @@ export default function HorizontalProjects() {
               
                 <h3 className="py-8 text-6xl sm:text-4xl md:text-5xl font-bold text-gray-900">{proj.title}</h3>
                 <div className="text-2xl text-gray-500">{proj.period}</div>
-                <p className="mt-2 text-gray-700 text-2xl sm:text-3xl md:text-4xl py-4">{proj.description}</p>
+                <p className="mt-2 text-gray-700 text-2xl sm:text-4xl md:text-5xl py-4">{proj.description}</p>
                 <div className="flex gap-4 flex-wrap">
                   {proj.links.map((link) => (
                     <a
