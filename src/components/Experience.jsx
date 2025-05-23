@@ -73,52 +73,52 @@ export default function Experience() {
         <div className="absolute left-1/2 top-0 w-1 bg-blue-200 h-full -translate-x-1/2 z-10 rounded" />
         <div className="w-full flex flex-col gap-16 z-10 h-full">
           {experiences.map((exp, idx) => {
-  const isLeft = idx % 2 === 0;
-  return (
-    <div key={idx} className="flex w-full justify-between items-center relative">
-      {/* Left side (block or image) */}
-      {isLeft ? (
-        <>
-          <div className="w-2/5 flex justify-end">
-            <div className="p-6 max-w-md text-right" >
-              <div className="flex flex-col items-end mb-2">
-                <span className="p-8 text-6xl font-bold text-gray-900">{exp.role}</span>
-                <span className="text-2xl text-gray-500">{exp.period}</span>
+            const isLeft = idx % 2 === 0;
+            return (
+              <div key={idx} className="flex w-full justify-between items-center relative">
+                {/* Left side (block or image) */}
+                {isLeft ? (
+                  <>
+                    <div className="w-2/5 flex justify-end">
+                      <div className="p-6 max-w-md text-right" >
+                        <div className="flex flex-col items-end mb-2">
+                          <span className="p-8 text-6xl font-bold text-gray-900">{exp.role}</span>
+                          <span className="text-2xl text-gray-500">{exp.period}</span>
+                        </div>
+                        <div className="p-8 text-gray-700 text-5xl">{exp.company}</div>
+                        <div className="mt-2 text-gray-700 text-4xl">{exp.description}</div>
+                      </div>
+                    </div>
+                    <div className="w-1/5 flex justify-center">
+                      <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-blue-200 bg-white flex items-center justify-center">
+                        <img src={exp.image} alt="Experience logo" className="w-full h-full object-cover rounded-full" />
+                      </div>
+                    </div>
+                    <div className="w-2/5" />
+                  </>
+                ) : (
+                  <>
+                    <div className="w-2/5" />
+                    <div className="w-1/5 flex justify-center">
+                      <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-blue-200 bg-white flex items-center justify-center">
+                        <img src={exp.image} alt="Experience logo" className="w-full h-full object-cover rounded-full" />
+                      </div>
+                    </div>
+                    <div className="w-2/5 flex justify-start">
+                      <div className="p-6 max-w-md text-left">
+                        <div className="flex flex-col items-start mb-2">
+                          <span className="p-8 text-6xl font-bold text-gray-900">{exp.role}</span>
+                          <span className="text-2xl text-gray-500">{exp.period}</span>
+                        </div>
+                        <div className="p-8 text-gray-700 text-5xl">{exp.company}</div>
+                        <div className="mt-2 text-gray-700 text-4xl">{exp.description}</div>
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
-              <div className="p-8 text-gray-700 text-5xl">{exp.company}</div>
-              <div className="mt-2 text-gray-700 text-4xl">{exp.description}</div>
-            </div>
-          </div>
-          <div className="w-1/5 flex justify-center">
-            <div className="w-35 h-35 rounded-full overflow-hidden border-2 border-blue-200 bg-white flex items-center justify-center">
-              <img src={exp.image} alt="Experience logo" className="w-full h-full object-cover rounded-full" />
-            </div>
-          </div>
-          <div className="w-2/5" />
-        </>
-      ) : (
-        <>
-          <div className="w-2/5" />
-          <div className="w-1/5 flex justify-center">
-            <div className="w-35 h-35 rounded-full overflow-hidden border-2 border-blue-200 bg-white flex items-center justify-center">
-              <img src={exp.image} alt="Experience logo" className="w-full h-full object-cover rounded-full" />
-            </div>
-          </div>
-          <div className="w-2/5 flex justify-start">
-            <div className="p-6 max-w-md text-left">
-              <div className="flex flex-col items-start mb-2">
-                <span className="p-8 text-6xl font-bold text-gray-900">{exp.role}</span>
-                <span className="text-2xl text-gray-500">{exp.period}</span>
-              </div>
-              <div className="p-8 text-gray-700 text-5xl">{exp.company}</div>
-              <div className="mt-2 text-gray-700 text-4xl">{exp.description}</div>
-            </div>
-          </div>
-        </>
-      )}
-    </div>
-  );
-})}
+            );
+          })}
         </div>
       </div>
     </section>
