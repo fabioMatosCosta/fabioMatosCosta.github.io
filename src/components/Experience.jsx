@@ -86,7 +86,7 @@ export default function Experience() {
                           <span className="text-2xl text-gray-500">{exp.period}</span>
                         </div>
                         <div className="p-8 text-gray-700 text-5xl">{exp.company}</div>
-                        <div className="mt-2 text-gray-700 text-4xl">{exp.description}</div>
+                        <div className="mt-2 text-gray-700 text-2xl sm:text-3xl md:text-4xl">{exp.description}</div>
                       </div>
                     </div>
                     <div className="w-1/5 flex justify-center">
@@ -111,7 +111,7 @@ export default function Experience() {
                           <span className="text-2xl text-gray-500">{exp.period}</span>
                         </div>
                         <div className="p-8 text-gray-700 text-5xl">{exp.company}</div>
-                        <div className="mt-2 text-gray-700 text-4xl">{exp.description}</div>
+                        <div className="mt-2 text-gray-700 text-2xl sm:text-3xl md:text-4xl">{exp.description}</div>
                       </div>
                     </div>
                   </>

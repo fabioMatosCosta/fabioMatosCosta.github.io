@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen font-sans">
+    <div className="bg-white min-h-screen font-sans w-full">
       <AnimatePresence>
         {showNavbar && (
           <motion.div
@@ -42,14 +42,22 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
-      <main>
-        <div ref={introRef} id="intro-section">
+      <main className="w-full">
+        <div ref={introRef} id="intro-section" className="w-full">
           <AnimatedSection><Intro /></AnimatedSection>
         </div>
+        <div className="w-full">
         <HorizontalProjects />
+        </div>
+        <div className="w-full">
         <Experience />
+        </div>
+        <div className="w-full">
         <AnimatedSection><Interests /></AnimatedSection>
+        </div>
+        <div className="w-full">
         <AnimatedSection><Links /></AnimatedSection>
+        </div>
       </main>
     </div>
   );
