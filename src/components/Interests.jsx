@@ -45,7 +45,7 @@ const Interests = () => (
         </div>
         <div className="h-[50vh] rounded-lg bg-white shadow-lg flex flex-col justify-end p-6 w-1/2">
           <h3 className="p-8 text-8xl font-bold text-gray-900">I have a passion for nature. </h3>
-          <p className="p-8 text-5xl text-gray-700"> I enjoy hiking and gardening.🏞️ 🌱 </p>
+          <p className="p-8 text-5xl text-gray-700"> I enjoy hiking and gardening 🏞️ 🌱 </p>
         </div>
       </div>
       <div className="flex flex-row items-center w-full mt-8 px-20">
